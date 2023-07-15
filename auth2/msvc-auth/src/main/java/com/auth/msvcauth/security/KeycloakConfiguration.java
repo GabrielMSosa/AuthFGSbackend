@@ -1,2 +1,15 @@
-package com.auth.msvcauth.security;public class KeycloakConfiguration {
+package com.auth.msvcauth.security;
+
+
+import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class KeycloakConfiguration {
+
+    @Bean
+    public KeycloakSpringBootConfigResolver KeycloakConfigResolver() {
+        return new KeycloakSpringBootConfigResolver();
+    }
 }

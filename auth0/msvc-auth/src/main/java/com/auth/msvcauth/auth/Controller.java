@@ -11,11 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
 import java.security.Principal;
+import org.springframework.security.access.prepost.PreAuthorize;
+
 
 @RestController
 public class Controller {
 
+    
+    //TENER EN CUENTA QUE DEBEMOS CREAR EL ROL COMO ROLE_USER KEYCLOAK
     @CrossOrigin(origins = "*")
+    @PreAuthorize("hasRole('USER')")
     @GetMapping("/departments")
     public String customers(@AuthenticationPrincipal Jwt principal) {
         System.out.println(principal.getClaimAsString("preferred_username"));

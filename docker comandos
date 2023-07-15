@@ -1,0 +1,139 @@
+para ver todas las imagenes
+docker ps --all 
+
+para ver logs 
+docker logs --follow 4ce80093ac81
+
+para ver app conectadas a mi red
+docker network inspect minet
+
+para app
+docker stop festive_shamir
+
+iniciar app
+docker start elegant_nash
+
+
+docker logs --follow heuristic_turing
+
+borrar contenedor
+docker rm  modest_hellman
+
+
+@RequestMapping("/checkout")
+public class CheckoutController {
+@Autowired
+private PandoraCenterClientRest client;
+
+    @PostMapping("/checkoutpk")
+
+
+
+borra imagenes
+docker rmi gateway,auth   
+
+para todos los contenedores
+docker stop $(docker ps -q)
+
+
+###COMANDOS PARA EJECUTAR LOS DOCKER FILE QUE ESTAN OPTIMIZADOS
+Hace el mavn clean package -DskiptTest solo corriendo el comando de abajo
+EJECUTAMOS DE LA CARPETA RAIZ FGSERVICEBACKEDN
+
+MSCV-PANDORACENTER:
+------------------
+docker build  -t pandoracenter-service . -f ./pandoracenter/pandora/Dockerfile
+
+docker container run --name pandoracenter-service --network minet -d pandoracenter-service
+
+//----------IMPORTANTE!!! APLICAR EN TODOS LOS MIMCROSERVICIOS
+agregar eureka-server 
+agregar my-db como host de db jdbc:mysql://my-db:3306
+
+
+ 
+ update   @Type(type = "uuid-char")
+
+MSCV-AUTH:
+----------
+docker build -t auth-service . -f ./auth2/auth/Dockerfile
+docker container run --name auth-service --network minet -d auth-service
+ update   @Type(type = "uuid-char")
+
+MSVC-FARMER
+-----------
+docker build -t farmer-service . -f ./farmer/farmerservices/Dockerfile
+
+docker container run --name farmer-service --network minet -d farmer-service
+
+ update   @Type(type = "uuid-char")
+ 
+ MSVC-FACTORY
+ -----------------
+
+ 
+ docker build -t factory-service . -f ./factory/FactoryMicroServices/Dockerfile
+ docker container run --name factory-service --network minet  -d factory-service
+ 
+ 
+
+MSCV-CHECKOUT
+-------------
+docker build  -t pandoraout-service . -f ./Checkoutpandora/checkout/Dockerfile
+docker container run --name pandoraout-service --network minet -p8071:8071 -d pandoraout-service
+docker container run --name pandoraout-service --network minet  -d pandoraout-service
+
+ update   @Type(type = "uuid-char")
+MSVC-GATEWAY 
+------------
+por el momento con el comando de abajo hay que actualizar
+
+
+docker build  -t gateway-service . -f ./gateway2/gateway/Dockerfile
+
+docker container run --name gateway-service --network minet -p8080:8080 -d gateway-service
+
+docker container run --name gateway-service --network minet -p8080:8080 -d gateway-service
+
+MSCVC-PANDORA SERVICE(EX POSCHECKIN)
+------------------------------------
+docker build  -t pandora-service . -f ./pandoracheckin/farmer/Dockerfile
+
+docker container run --name pandora-service --network minet -d pandora-service
+ 
+ update   @Type(type = "uuid-char")
+
+
+MSCVC-EUREKA-SERVER
+-------------------
+
+docker build  -t eureka-server . -f ./Eureka/EurekaServer/Dockerfile
+
+docker container run --name eureka-server --network minet -p8761:8761 -d eureka-server
+
+
+///////////////////-----------------AUTH'0-----------------------///////////////////////////////
+
+TENTAND DOMINIAN: dev-z35kgcehhbn4fbck.us.auth0.com
+
+DROP TABLE IF EXISTS basculaparametro,datauser_campo ,datouser_factory,matchiduserkvs,mytruck,ofertas,tenomdec,transaccion_te,unit_trans_transacc_te,unittransaccion ;
+      
+
+|         
+|       
+| hibernate_sequence     
+|          
+|               |
+|                 |
+|                 |
+|                  |
+|                |
+|          |
+|  |
+|         |
+
+
+
+
+
+
